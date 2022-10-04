@@ -1,0 +1,8 @@
+/venv/*
+*.pyc
+.idea
+
+venv
+online_shop_ui/node_modules
+online_shop_ui/package-lock.json
+online_shop_ui/src/local_settings.json
