@@ -39,15 +39,7 @@ export default Vue.extend({
   props: {
     msg: String,
   },
-  data(){
-    return{
-      products: []
-    }
-  },
-  created(){
-    axios.get("/lo//.../")
-        .then((responce) =>{this.products=responce.data})
-  }
+
 });
 </script>
 
