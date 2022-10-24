@@ -1,4 +1,6 @@
 from django.shortcuts import get_object_or_404
+from drf_yasg.openapi import Parameter, IN_QUERY, FORMAT_FLOAT
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
@@ -14,8 +16,23 @@ class ProductViewSet(viewsets.ModelViewSet):
     http_method_names = ['post', 'get', 'patch', 'delete']
     permission_classes = [AllowAny]
 
-    def list(self, request, *args, **kwargs):
+    type_product = Parameter("type_product", IN_QUERY, description="id типа товара", type=FORMAT_FLOAT,
+                                required=False)
+    @swagger_auto_schema(
+        operation_description="Список товара по типу",
+        manual_parameters=[type_product],
+        responses={
+            200: "",
+        }
+    )
+    def list(self, request):
+        data = request.query_params
+        type_product = data.get('type_product', None)
+
         qs = Product.objects.all()
+        if type_product is not None:
+            qs = qs.filter(type_product=type_product)
+
         serializer = ProductSerializer(qs, many=True)
         return Response(serializer.data, status=200)
 
