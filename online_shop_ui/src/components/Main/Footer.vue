@@ -1,8 +1,8 @@
 <template>
   <footer>
     <div class="container">
-      <div>&copy; БГТУ, 2022</div>
-      <div>+7(000)000-00-00</div>
+      <div>&copy; Patter Hause</div>
+      <div>+7(930)090-14-87</div>
     </div>
   </footer>
 </template>
