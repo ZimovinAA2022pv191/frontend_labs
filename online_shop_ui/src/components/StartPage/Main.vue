@@ -248,7 +248,6 @@ export default {
   font-family: PT Sans,Helvetica,Arial,sans-serif;;
   background-color: #fff;
   width: 270px;
-  margin-top: 20px;
   border: solid 1px lightgray;
 }
 

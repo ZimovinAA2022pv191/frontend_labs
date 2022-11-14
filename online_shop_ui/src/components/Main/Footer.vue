@@ -19,7 +19,6 @@ footer {
   padding: 15px;
   color: #fff;
   height: 100px;
-  margin-top: -100px;
 }
 footer .container {
   height: 100%;

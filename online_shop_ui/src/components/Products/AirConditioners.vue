@@ -5,7 +5,6 @@
         <div>
           <img src="../../../public/catalog_images/rovex.jpeg" />
         </div>
-        
 
           <div>
             <div class="product-title">Кондиционер (сплит-система) Rovex Trend-09 DEXP WM-F610NTMA/WW настенный
