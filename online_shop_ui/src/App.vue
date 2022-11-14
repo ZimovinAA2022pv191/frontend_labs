@@ -25,6 +25,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: #f6f6f6;;
 }
 .wrapper {
   min-height: 100vh;
@@ -32,6 +33,7 @@ html, body {
 }
 .container {
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
 }
 main {

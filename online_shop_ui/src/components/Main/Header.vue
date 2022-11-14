@@ -3,9 +3,9 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <div class="logo">
+        <!---<div class="logo">
           <img src="https://trial-sport.ru/img/trial_logo.svg">
-        </div>
+        </div>--->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -81,7 +81,7 @@ header nav ul li {
   padding: 15px 15px;
 }
 .router-link-active,
-.nav-link:focus,
+.link:focus,
 .nav-link:hover
 {
   color: #fff;

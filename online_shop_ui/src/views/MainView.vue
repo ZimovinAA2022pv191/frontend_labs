@@ -1,11 +1,8 @@
 <template>
   <section class="main">
-<h1>Добро пожаловать</h1>
   <div>
     <Main></Main>
   </div>
-
-
   </section>
 </template>
 
