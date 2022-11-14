@@ -7,7 +7,7 @@
               <img src="../../assets/menu_icons/bit_technika.png" class="menu_icons">
             </div>
           <div class="info_sub">
-            <router-link class="link" :to="{name: 'Catalog'}">
+            <router-link class="link" :to="{name: 'AirConditioners'}">
             Бытовая техника
             </router-link>
             <div class="style_little">
