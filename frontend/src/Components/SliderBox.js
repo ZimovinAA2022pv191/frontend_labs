@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import forest1Img from '../assets/slider/forest1.jpg';
 import forest2Img from '../assets/slider/forest2.jpg';
+import "./SliderBox.css"
+
 
 class SliderBox extends Component {
     render() {
@@ -10,7 +12,7 @@ class SliderBox extends Component {
                 <Carousel>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 slider"
                             src={forest1Img}
                             alt="Forest1"
                         />
@@ -20,7 +22,7 @@ class SliderBox extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 slider"
                             src={forest2Img}
                             alt="Forest2"
                         />
@@ -30,7 +32,7 @@ class SliderBox extends Component {
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block w-100 slider"
                             src={forest1Img}
                             alt="Forest1"
                         />

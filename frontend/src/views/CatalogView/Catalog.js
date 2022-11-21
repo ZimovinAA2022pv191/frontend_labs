@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './Catalog.css'
 import axios from "axios";
-
+import picture1 from "../../assets/conditioners/Рисунок1.jpeg"
+import {Container} from "react-bootstrap";
 
 export default class Catalog extends Component {
     constructor(props) {
@@ -39,6 +40,7 @@ export default class Catalog extends Component {
     }
 
 
+
     render() {
         const {error, isLoaded, products} = this.state;
         if (error){
@@ -46,13 +48,18 @@ export default class Catalog extends Component {
         }else if(!isLoaded){
             return <p> Loading... </p>
         }else{
-            return <div className="product">
+            return <Container>
+            <div>
                 {products.map(product=>(
-                    <li key={product.name}>
-                        {product.name}
-                    </li>
+                    <div>
+                        <img src={picture1}/>
+                        <div>{product.name}</div>
+                        <div>{product.price}</div>
+                        <div>{product.description}</div>
+                    </div>
                 ))}
             </div>
+                </Container>
         }
     }
 };
