@@ -14,7 +14,6 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     http_method_names = ['post', 'get', 'patch', 'delete']
-    permission_classes = [AllowAny]
 
     type_product = Parameter("type_product", IN_QUERY, description="id типа товара", type=FORMAT_FLOAT,
                                 required=False)
