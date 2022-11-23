@@ -52,6 +52,7 @@ class Contacts extends Component {
                     console.log(error);
                 }
             );
+        alert("Ваше обращение отправлено!\nОтвет будет получен в ближайшее время.")
     }
 
     render() {
