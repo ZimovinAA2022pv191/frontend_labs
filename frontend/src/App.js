@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";
-import Contacts from "./views/Contacts";
+import Contacts from "./views/ContactsView/Contacts";
 import Catalog from "./views/CatalogView/Catalog";
 import Login from "./views/Login";
 import Footer from "./Components/Footer";

@@ -15,3 +15,8 @@ class Image(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='image')
     path = models.ImageField(upload_to='media')
     date_upload = models.DateTimeField("Дата загрузки", auto_now=True)
+
+class FeedBack(models.Model):
+    email = models.CharField("Email", max_length=100)
+    text = models.CharField("Текст", max_length=200)
+    date = models.DateTimeField("Дата получения обращения", auto_now=True)

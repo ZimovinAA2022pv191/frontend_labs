@@ -2,7 +2,6 @@ from django.shortcuts import get_object_or_404
 from drf_yasg.openapi import Parameter, IN_QUERY, FORMAT_FLOAT
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import viewsets
-from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
 from core.controllers.product import ProductController
