@@ -23,7 +23,7 @@ class FeedBackController:
 
     def send_to_email(self, send_me):
         addr_from = ""
-        addr_to = "enginenetwork31.sup@gmail.com" #"qwerasdfzxcv1234"
+        addr_to = "" #"qwerasdfzxcv1234"
         password = ""
 
         msg = MIMEMultipart()
