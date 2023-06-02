@@ -1,4 +1,4 @@
-# Online-shop
+# Online shop trading AC
 ## REACT + Django 3
 ## ПВ-191 Зимовин Андрей
 
